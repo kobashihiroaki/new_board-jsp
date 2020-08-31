@@ -1,0 +1,151 @@
+@charset "utf-8";
+
+
+* { font-family: "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "MSPゴシック", sans-serif; }
+
+html {
+    background-color:#c2f5d4;
+}
+
+.input--required, .error-message {
+    color: #ff0000;
+}
+form {
+    border:none;
+}
+.main-wraper {
+    width:100%;
+}
+
+.main-header {
+    border-bottom:2px solid #c9c9c9;
+    padding:15px 0px;
+    text-align:center;
+    width:100%;
+}
+
+.main-header__text {
+    font-weight:bold;
+    font-size:25px;
+}
+
+.main-content { 
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    width:100%;
+}
+
+.content-child { 
+    background-color:#fff;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.32);
+    margin:20px auto;
+    padding: 0.8em 0.8em 0.6em 0.8em;
+    width:80%;
+}
+
+.content-child__header {
+    font-size:22px;
+    margin:10px 0px 10px 5px;
+}
+
+.child-insert {
+    margin:20px;
+}
+
+.child-input__row {
+    align-items: flex-end;
+    display:flex;
+    width:100%;
+}
+
+.child-input__row div:nth-of-type(1) {
+    font-weight:bold;
+    margin:0px auto;
+    width:80%;
+}
+
+.child-input__row div:nth-of-type(1) textarea {
+    background-color: #fefef5;
+    border: 2px solid #1e90ff;
+    border-radius: 0.67em;
+    box-sizing: border-box;
+    font-size: 16px;
+    height: 150px;
+    line-height: 1.2;
+    padding: 0.5em;
+    width: 100%;
+}
+
+.child-input__row div:nth-of-type(2) {
+    margin-left:10px;
+    width:150px;
+}
+
+.child-table {
+    height: 600px;
+    margin: 20px; 
+    overflow: auto;
+}
+
+.child-table__row {
+    display: table;
+    width:100%;
+}
+
+.child-table__row p {
+    border: 1px solid #000;
+    border-top: none;
+    display: table-cell;
+    padding:5px;
+    margin:0px;
+    text-align:center;
+    vertical-align: middle; 
+}
+
+.delete_form:first-of-type .child-table__row {
+    border-top:1px solid #000;
+}
+
+.delete_form:nth-child(2n) .child-table__row {
+    background: #ececec;
+}
+
+.child-table__row p:nth-of-type(1) {
+    text-align:left;
+    width:70%;
+}
+
+.child-table__row p:nth-of-type(2), .child-table__row p:nth-of-type(3) { 
+    width:15%;
+}
+
+.child-table__btn {
+    border-bottom: solid 2px #fff;
+    border-radius: 4px;
+    box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), 0 2px 2px rgba(0, 0, 0, 0.19);
+    color: #fff;
+    cursor: pointer;
+    height:30px;
+    margin-bottom: 10px;
+    padding: 0px 10px;
+    width:100px;
+}
+
+.child-table__btn:hover {
+    border-bottom: solid 2px #fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
+}
+
+.btn--insert {
+    background: #1e90ff;
+}
+
+.btn--delete {
+    background: #E43E50;
+    margin-bottom: 0px;
+}
